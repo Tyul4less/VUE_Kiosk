@@ -1,0 +1,63 @@
+header {
+  position:relative;
+  height: 50px;
+  padding-top:0px;
+  color: black;
+  background: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: -1px 3px 6px #8C8C8C;
+}
+
+.firstPageImage{
+  position:relative;
+  margin:0;
+  height: 100vh;
+  width: 70%;
+  background: cyan;
+  display: inline-block;
+  float: left;
+
+}
+
+#imgContainer{
+  display:table-cell;
+  vertical-align:middle;
+  overflow:hidden;
+  margin:0 auto;
+}
+
+.loginDiv{
+  position:relative;
+  margin: 0px;
+  padding: 0px;
+  height: 100vh;
+  width: 30%;
+  background: white;
+  display: inline-block;
+  float: right;
+}
+.userState{
+  position:absolute;
+  right: 60px;
+  float:right;
+  width: 100px;
+}
+.userState p{
+  margin:2px
+}
+
+.content{
+  border: solid 1px black;
+  width: 80%;
+  min-height:600px;
+  align-items: center;
+  margin:auto;
+  margin-top: 20px;
+  text-align:center;
+}

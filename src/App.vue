@@ -1,26 +1,35 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<template >
+  <!--<div v-if='userData.token' >-->
+  <div>
+    <HeadLine/>
+    <LeftMenu/>
+    <QuickMenu/>
+    <router-view/>
+  </div>
+
+<!--  <div>
+    <router-view/>
+  </div>-->
+  <!--<input type="button" value="ff" @click='handler'/>-->
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+    import { mapState } from 'vuex';
+    import HeadLine from './components/HeadLine'
+    import LeftMenu from './components/LeftMenu'
+    import QuickMenu from './components/QuickMenu'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+      name: 'App',
+      computed:{
+        ...mapState(['userData'])
+      },
+      components: {
+        HeadLine, LeftMenu, QuickMenu
+      },
+      methods : {
+        handler () {
+          console.log(this.userData.token);
+        }
+      }
+    }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

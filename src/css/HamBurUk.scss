@@ -1,0 +1,88 @@
+#menu{
+  width:109.4px;
+  height:200px;
+  display:inline-block;
+  border:1px solid #79AAFF;
+  float:left;
+  text-align: center;
+}
+#menu:hover{
+  border:2px solid #3162C7;
+}
+#menuImg {
+  object-fit: cover;
+  max-width: 100%;
+  margin: auto;
+  max-height: 110px;
+}
+#imgDiv{
+  width:100%;
+  height:100px;
+  display:flex;
+}
+.EACounter{
+  width:50px;
+  height:20px;
+  text-align:center;
+}
+
+.menuBoard{
+  position: relative;
+  width:50%;
+  display:inline-block;
+  margin-left:9%;
+  margin-right: 2%;
+  margin-top: 20px;
+  border: 5px solid #3162C7;
+  text-align:center;
+  min-height:600px;
+  align-items: center;
+}
+.basket{
+  position: fixed;
+  width:30%;
+  height:600px;
+  border: 5px solid #5586EB;
+  display: inline-block;
+  margin-right:9%;
+  padding: 0px;
+  margin-top: 20px;
+
+}
+.oneItem{
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  border-bottom: 2px solid #8BBCFF;
+}
+.oneItem:hover{
+  border-bottom:1.5px solid #3162C7;
+}
+.priceDiv{
+  font-weight: bold;
+  font-size: 30px;
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+  border-top: 2px solid #8BBCFF;
+  position: absolute;
+  float: bottom;
+  right: 0px;
+  bottom: 0px;
+}
+.paymentOption{
+  position: relative;
+  width:50%;
+  display:inline-block;
+  margin-left:9%;
+  margin-right: 2%;
+  margin-top: 20px;
+  border: 5px solid #3162C7;
+  text-align:center;
+  min-height:600px;
+  align-items: center;
+  font-weight: bold;
+}
